@@ -42,7 +42,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mt-1 mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mt-1 mb-2 mb-lg-0 w-100 justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link ms-md-4" style="font-size: large;" aria-current="page" href="index.html">Ana Sayfa</a>
                     </li>
@@ -59,27 +59,10 @@
                         <a class="nav-link" style="font-size: large;" href="iletisim.html">İletişim</a>
                     </li>
                 </ul>
-                <span class="navbar-text pe-4" style="font-family: 'Sora', sans-serif; font-size: larger;">
-                    <div class="row">
-                        <div class="col-1">
-                            <div class="middle trash-can tiny">
-                                <div class="top">
-                                    <div class="handle"></div>
-                                    <div class="base"></div>
-                                </div>
-                                <div class="body">
-                                    <div class="line"></div>
-                                    <div class="line second"></div>
-                                    <div class="line third"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-11 ps-3" style="padding-top: 20px;">
-                            <strong><i style="color: #59a942">“Leave no trace behind.”</i></strong>
-
-                        </div>
-                    </div>
-                </span>
+                
+            </div>
+            <div class="navbar-text pe-3" style="font-family: 'Sora', sans-serif; font-size: larger;">
+                <strong><i style="color: #59a942">“Leave no trace behind.”</i></strong>
             </div>
 
         </div>
@@ -89,6 +72,16 @@
 
 
     <style>
+
+        .carousel-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0; 
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        }
         .carousel-item {
             height: 32rem;
             background: black;
@@ -96,6 +89,7 @@
             position: relative;
             background-position: center;
             background-size: cover;
+            opacity: 0;
         }
         .container {
             position: absolute;
@@ -116,15 +110,17 @@
         }
     </style>
 
+    <br>
+
     <!-- Header - Start -->
-    <header class="pt-1 mt-4">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade shadow-sm p-4 mb-5 pt-5 mt-5"  data-bs-ride="carousel">
+    <header>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade shadow mb-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner pt-5 mt-5">
                 <div class="carousel-item active">
                     <img src="assets/atiktaneser_proje.jpg" class="carouselImages d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
@@ -204,13 +200,13 @@
                     <p class="h5 mb-4" style="font-weight: 600; color: #133f02;">Hakkımızda</p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2">
-                            <a class="text-dark" href="iletisim.html">Kadromuz</a>
+                            <a class="text-dark text-decoration-none" href="iletisim.html">Kadromuz</a>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark" href="duyurular.html">Duyurular</a>
+                            <a class="text-dark text-decoration-none" href="duyurular.html">Duyurular</a>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark" href="etkinlikler.html">Etkinlikler</a>
+                            <a class="text-dark text-decoration-none" href="etkinlikler.html">Etkinlikler</a>
                         </li>
                     </ul>
                 </div>
@@ -219,10 +215,10 @@
                     <p class="h5 mb-4" style="font-weight: 600; color: #133f02;">Destek</p>
                     <ul class="p-0" style="list-style: none; cursor: pointer">
                         <li class="my-2">
-                            <a class="text-dark" href="iletisim.html">İletişim</a>
+                            <a class="text-dark text-decoration-none" href="iletisim.html">İletişim</a>
                         </li>
                         <li class="my-2">
-                            <a class="text-dark" href="duyurular.html">Bülten</a>
+                            <a class="text-dark text-decoration-none" href="duyurular.html">Bülten</a>
                         </li>
                     </ul>
                 </div>
