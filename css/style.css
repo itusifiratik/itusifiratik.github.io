@@ -98,3 +98,7 @@ h2 {
     transition: 0.7s;
     transform: scale(1.25);
 }
+
+a {
+    color: #59a942;
+}
