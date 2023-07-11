@@ -92,7 +92,8 @@ h2 {
 .shape-divider .shape-fill {
     fill: #FFFFFF;
 }
-button:hover {
+
+#linkBrands:hover {
     box-shadow: #133f02;
     transition: 0.7s;
     transform: scale(1.25);
